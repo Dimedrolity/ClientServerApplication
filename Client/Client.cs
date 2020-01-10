@@ -11,10 +11,6 @@ namespace Client
         private readonly NetworkStream stream;
 
         private const int BytesCountForMessageLength = 4;
-        // private byte[] sentMessage;
-        // private byte[] sentMessageLength;
-        // private byte[] receivedMessage;
-        // private byte[] receivedMessageLength;
 
         public TcpServerClient(string ip, int port)
         {
@@ -26,9 +22,6 @@ namespace Client
         {
             byte[] lengthAndMessage = GetBytesOfLengthAndMessage(message);
             stream.Write(lengthAndMessage, 0, lengthAndMessage.Length);
-            //
-            // sentMessage.FillWithZeros();
-            // sentMessageLength.FillWithZeros();
         }
 
         private byte[] GetBytesOfLengthAndMessage(string message)
@@ -40,13 +33,10 @@ namespace Client
 
         public string ReceiveFromServer()
         {
-            var buffer = CreateBuffer();
-            var receivedMessage = ReceiveMessage(buffer);
-            var response = Encoding.UTF8.GetString(receivedMessage);
-            //
-            // receivedMessage.FillWithZeros();
-            // receivedMessageLength.FillWithZeros();
-            //
+            var messageBuffer = CreateBuffer();
+            ReadMessageBytesTo(messageBuffer);
+            var response = Encoding.UTF8.GetString(messageBuffer);
+
             return response;
         }
 
@@ -59,7 +49,7 @@ namespace Client
             return receivedMessage;
         }
 
-        private byte[] ReceiveMessage(byte[] receivedMessage)
+        private void ReadMessageBytesTo(byte[] receivedMessage)
         {
             var bytesCountToRead = receivedMessage.Length;
 
@@ -69,8 +59,6 @@ namespace Client
                 readBytes += stream.Read(receivedMessage, readBytes, bytesCountToRead);
                 bytesCountToRead = receivedMessage.Length - readBytes;
             }
-
-            return receivedMessage;
         }
 
         public void LeaveFromServer()
