@@ -1,0 +1,11 @@
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\bin\Debug\netcoreapp3.0\Server.exe
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\bin\Debug\netcoreapp3.0\Server.deps.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\bin\Debug\netcoreapp3.0\Server.runtimeconfig.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\bin\Debug\netcoreapp3.0\Server.runtimeconfig.dev.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\bin\Debug\netcoreapp3.0\Server.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\bin\Debug\netcoreapp3.0\Server.pdb
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\obj\Debug\netcoreapp3.0\Server.csprojAssemblyReference.cache
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\obj\Debug\netcoreapp3.0\Server.AssemblyInfoInputs.cache
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\obj\Debug\netcoreapp3.0\Server.AssemblyInfo.cs
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\obj\Debug\netcoreapp3.0\Server.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\Server\obj\Debug\netcoreapp3.0\Server.pdb

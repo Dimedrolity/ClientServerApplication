@@ -1,0 +1,11 @@
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\Client.exe
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\Client.deps.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\Client.runtimeconfig.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\Client.runtimeconfig.dev.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\Client.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\Client.pdb
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.csprojAssemblyReference.cache
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.AssemblyInfoInputs.cache
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.AssemblyInfo.cs
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.pdb
