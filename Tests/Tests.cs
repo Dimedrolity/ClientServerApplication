@@ -7,13 +7,8 @@ namespace TestProject1
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
-        public void FirstClient()
+        public void OneClientSendEnglishMessage()
         {
             var client = new TcpServerClient("127.0.0.1", 10000);
             var message = "Redkin Dmitry";
@@ -26,7 +21,7 @@ namespace TestProject1
         }
 
         [Test]
-        public void SecondClient()
+        public void OneClientSendRussianMessage()
         {
             var client = new TcpServerClient("127.0.0.1", 10000);
             var message = "Редькин Дмитрий";
@@ -36,6 +31,20 @@ namespace TestProject1
             var actual = client.ReceiveFromServer();
             client.LeaveFromServer();
             Assert.AreEqual(expected, actual);
+        }
+        
+        [Test]
+        public void OneClientSendMessageExit()
+        {
+            var client = new TcpServerClient("127.0.0.1", 10000);
+            var message = "";
+            client.SendToServer(message);
+            
+            var expected = "";
+            var actual = client.ReceiveFromServer();
+            client.LeaveFromServer();
+            Assert.AreEqual("", actual);
+
         }
 
         [Test]

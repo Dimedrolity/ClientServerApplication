@@ -42,12 +42,6 @@ namespace Server
                 try
                 {
                     message = ReceiveMessageFrom(clientStream);
-                    if (message == "")
-                    {
-                        Console.WriteLine($"Сервер: клиент {client.Client.RemoteEndPoint} оборвал связь");
-                        break;
-                    }
-
                     Console.WriteLine(
                         $"Сервер: от клиента {client.Client.RemoteEndPoint} получено сообщение - {message}");
                 }
