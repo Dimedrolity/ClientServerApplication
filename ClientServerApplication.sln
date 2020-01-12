@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{3C78EB50-EB51-492C-8609-30C0BAF6E1D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteStreamUtils", "ByteStreamUtils\ByteStreamUtils.csproj", "{9E786EB5-3465-44C5-ACD9-1FD7E84423AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3C78EB50-EB51-492C-8609-30C0BAF6E1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C78EB50-EB51-492C-8609-30C0BAF6E1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C78EB50-EB51-492C-8609-30C0BAF6E1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E786EB5-3465-44C5-ACD9-1FD7E84423AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E786EB5-3465-44C5-ACD9-1FD7E84423AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E786EB5-3465-44C5-ACD9-1FD7E84423AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E786EB5-3465-44C5-ACD9-1FD7E84423AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

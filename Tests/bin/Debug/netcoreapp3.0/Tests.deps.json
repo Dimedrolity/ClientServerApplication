@@ -1010,12 +1010,23 @@
           }
         }
       },
+      "ByteStreamUtils/1.0.0": {
+        "runtime": {
+          "ByteStreamUtils.dll": {}
+        }
+      },
       "Client/1.0.0": {
+        "dependencies": {
+          "ByteStreamUtils": "1.0.0"
+        },
         "runtime": {
           "Client.dll": {}
         }
       },
       "Server/1.0.0": {
+        "dependencies": {
+          "ByteStreamUtils": "1.0.0"
+        },
         "runtime": {
           "Server.dll": {}
         }
@@ -1531,6 +1542,11 @@
       "sha512": "sha512-91tvfHWHSrYFPolCwWYqbpo1YaoBUCQ3uNZ/O/zr0ev5BnkoATJoie16ywlMVUaXZtfSfNELxhtG3aqpTfwR4w==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "ByteStreamUtils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Client/1.0.0": {
       "type": "project",

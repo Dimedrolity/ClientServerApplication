@@ -1,69 +1,33 @@
-﻿using System;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
+﻿using System.Net.Sockets;
+using ByteStreamUtils;
 
 namespace Client
 {
     public class TcpServerClient
     {
         private readonly TcpClient client;
-        private readonly NetworkStream stream;
-
-        private const int BytesCountForMessageLength = 4;
+        private readonly Streamer streamer;
 
         public TcpServerClient(string ip, int port)
         {
             client = new TcpClient(ip, port);
-            stream = client.GetStream();
+            var stream = client.GetStream();
+            streamer = new Streamer(stream);
         }
 
         public void SendToServer(string message)
         {
-            byte[] lengthAndMessage = GetBytesOfLengthAndMessage(message);
-            stream.Write(lengthAndMessage, 0, lengthAndMessage.Length);
-        }
-
-        private byte[] GetBytesOfLengthAndMessage(string message)
-        {
-            var sentMessage = Encoding.UTF8.GetBytes(message);
-            var sentMessageLength = BitConverter.GetBytes(sentMessage.Length);
-            return sentMessageLength.Concat(sentMessage).ToArray();
+            streamer.Write(message);
         }
 
         public string ReceiveFromServer()
         {
-            var messageBuffer = CreateBuffer();
-            ReadMessageBytesTo(messageBuffer);
-            var response = Encoding.UTF8.GetString(messageBuffer);
-
-            return response;
-        }
-
-        private byte[] CreateBuffer()
-        {
-            var receivedMessageLength = new byte[BytesCountForMessageLength];
-            stream.Read(receivedMessageLength, 0, BytesCountForMessageLength);
-            int messageLength = receivedMessageLength.ToIntLittleEndian();
-            var receivedMessage = new byte[messageLength];
-            return receivedMessage;
-        }
-
-        private void ReadMessageBytesTo(byte[] receivedMessage)
-        {
-            var bytesCountToRead = receivedMessage.Length;
-
-            var readBytes = 0;
-            while (bytesCountToRead > 0)
-            {
-                readBytes += stream.Read(receivedMessage, readBytes, bytesCountToRead);
-                bytesCountToRead = receivedMessage.Length - readBytes;
-            }
+            return streamer.ReadMessage();
         }
 
         public void LeaveFromServer()
         {
-            stream.Close();
+            streamer.CloseStream();
             client.Close();
         }
     }

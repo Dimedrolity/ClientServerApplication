@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp3.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Дима\\RiderProjects\\ClientServerApplication\\ByteStreamUtils\\ByteStreamUtils.csproj": {
+            "projectPath": "C:\\Users\\Дима\\RiderProjects\\ClientServerApplication\\ByteStreamUtils\\ByteStreamUtils.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

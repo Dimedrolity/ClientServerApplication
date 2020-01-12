@@ -9,3 +9,6 @@ C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcore
 C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.AssemblyInfo.cs
 C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.dll
 C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.pdb
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\ByteStreamUtils.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\bin\Debug\netcoreapp3.0\ByteStreamUtils.pdb
+C:\Users\Дима\RiderProjects\ClientServerApplication\Client\obj\Debug\netcoreapp3.0\Client.csproj.CopyComplete

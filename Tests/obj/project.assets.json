@@ -1439,9 +1439,22 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "ByteStreamUtils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/ByteStreamUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ByteStreamUtils.dll": {}
+        }
+      },
       "Client/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "ByteStreamUtils": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Client.dll": {}
         },
@@ -1452,6 +1465,9 @@
       "Server/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "ByteStreamUtils": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Server.dll": {}
         },
@@ -5212,6 +5228,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "ByteStreamUtils/1.0.0": {
+      "type": "project",
+      "path": "../ByteStreamUtils/ByteStreamUtils.csproj",
+      "msbuildProject": "../ByteStreamUtils/ByteStreamUtils.csproj"
     },
     "Client/1.0.0": {
       "type": "project",

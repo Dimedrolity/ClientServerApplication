@@ -96,3 +96,5 @@ C:\Users\Дима\RiderProjects\ClientServerApplication\Tests\obj\Debug\netcorea
 C:\Users\Дима\RiderProjects\ClientServerApplication\Tests\obj\Debug\netcoreapp3.0\Tests.csproj.CopyComplete
 C:\Users\Дима\RiderProjects\ClientServerApplication\Tests\obj\Debug\netcoreapp3.0\Tests.dll
 C:\Users\Дима\RiderProjects\ClientServerApplication\Tests\obj\Debug\netcoreapp3.0\Tests.pdb
+C:\Users\Дима\RiderProjects\ClientServerApplication\Tests\bin\Debug\netcoreapp3.0\ByteStreamUtils.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\Tests\bin\Debug\netcoreapp3.0\ByteStreamUtils.pdb
