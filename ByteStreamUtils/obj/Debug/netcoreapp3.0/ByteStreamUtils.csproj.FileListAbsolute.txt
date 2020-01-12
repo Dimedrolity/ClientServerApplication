@@ -1,0 +1,8 @@
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\bin\Debug\netcoreapp3.0\ByteStreamUtils.deps.json
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\bin\Debug\netcoreapp3.0\ByteStreamUtils.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\bin\Debug\netcoreapp3.0\ByteStreamUtils.pdb
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\obj\Debug\netcoreapp3.0\ByteStreamUtils.csprojAssemblyReference.cache
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\obj\Debug\netcoreapp3.0\ByteStreamUtils.AssemblyInfoInputs.cache
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\obj\Debug\netcoreapp3.0\ByteStreamUtils.AssemblyInfo.cs
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\obj\Debug\netcoreapp3.0\ByteStreamUtils.dll
+C:\Users\Дима\RiderProjects\ClientServerApplication\ByteStreamUtils\obj\Debug\netcoreapp3.0\ByteStreamUtils.pdb
