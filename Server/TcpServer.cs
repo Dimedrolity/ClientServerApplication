@@ -33,11 +33,12 @@ namespace Server
                 {
                     var stream = client.GetStream();
                     streamer = new Streamer(stream);
-                    ReceiveAndSendMessageTo(client);
+                    ReceiveAndSendMessageTo(client);       //change to better name
                 }).Start();
             }
         }
 
+        //todo refactoring
         private void ReceiveAndSendMessageTo(TcpClient client)
         {
             while (true)

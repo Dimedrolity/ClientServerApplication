@@ -9,7 +9,7 @@ namespace ByteStreamUtils
     {
         private readonly NetworkStream stream;
 
-        private const int BytesCountForMessageLength = 4;
+        private static int BytesCountForMessageLength = 4;
 
         public Streamer(NetworkStream stream)
         {
